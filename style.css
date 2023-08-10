@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav {
+    margin-top: 50px;
+    margin-right: 30px;
+    float: right;
+    width: 30%;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    font-family:'Roboto Condensed';
+    text-decoration: none;
+    color: white;
+}
+
+nav li :hover {
+    color: rgb(207, 204, 204);
+}
+
+header {
+    background-image:url(./images/1920x1080-95116-abstract-dark-black-minimalism-minimalist-hd-4k.jpg);
+    height: 980px;
+}
+
+
+#whoAmI {
+    color: white;
+    padding-top: 350px;
+    margin-left: 20px;
+}
+
+.prenom{
+    font-family:'Roboto Condensed';
+    font-weight: 300;
+    font-size: 100px;
+    line-height: 95px;
+}
+
+.nom{
+    font-family:'Roboto Condensed';
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 95px;
+}
+
+.work{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-family:'Roboto Condensed';
+    font-weight: 400;
+}
+
+.presentation{
+    font-family:'Roboto Condensed';
+    font-weight: 300;
+    font-size: 15px;
+    width: 50%;
+}
