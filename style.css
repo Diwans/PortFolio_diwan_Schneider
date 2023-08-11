@@ -327,6 +327,10 @@ footer {
     font-size: 7em;
 }
 
+.mailIcon{
+    font-size: 5em;
+}
+
 @media screen and (max-width: 1600px){
     nav {
         width: 50%;
@@ -471,7 +475,7 @@ footer {
         font-size: 30px;
     }
 
-    .fa-5x{
+    .mailIcon{
         font-size: 4em;
     }
 }
@@ -574,7 +578,7 @@ font-size: 12px;
     margin-left: 25px;
 }
 
-.fa-5x{
+.mailIcon{
     font-size: 3em;
 }
 
@@ -681,7 +685,7 @@ footer{
         font-size: 15px;
     }
 
-    .fa-5x{
+    .mailIcon{
         font-size: 2em;
     }
 }
