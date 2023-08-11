@@ -323,6 +323,10 @@ footer {
     background-color: white;
 }
 
+.iconSize {
+    font-size: 7em;
+}
+
 @media screen and (max-width: 1600px){
     nav {
         width: 50%;
