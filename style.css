@@ -3,67 +3,67 @@
     padding: 0;
     font-family:'Roboto Condensed';
 }
-nav {
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/*HEADER*/
+nav{
     margin-top: 50px;
     margin-right: 30px;
     float: right;
     width: 30%;
 }
-
-nav ul {
+nav ul{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-
-nav li {
+nav li{
     list-style: none;
 }
-
-nav a {
-    color: white;
-}
-
-nav li :hover {
+nav li :hover{
     color: rgb(207, 204, 204);
 }
-
-header {
+nav a{
+    color: white;
+}
+header{
     background-image:url(./images/1920x1080-95116-abstract-dark-black-minimalism-minimalist-hd-4k.jpg);
     height: 980px;
 }
-
-
-#whoAmI {
+#whoAmI{
     color: white;
     padding-top: 350px;
     margin-left: 20px;
 }
-
 .prenom{
     font-weight: 300;
     font-size: 100px;
     line-height: 95px;
 }
-
 .nom{
     font-weight: 700;
     font-size: 120px;
     line-height: 95px;
 }
-
 .work{
     margin-top: 20px;
     margin-bottom: 5px;
     font-weight: 400;
 }
-
 .presentation{
     font-weight: 300;
     font-size: 15px;
     width: 50%;
 }
 
+
+
+/*COMPETENCES*/
 .skillCard{
     width: 500px;
     height: 200px;
@@ -76,27 +76,22 @@ header {
     padding-top: 50px;
     box-shadow: 5px 5px 15px 2px rgba(0,0,0,0.88);
 }
-
-
 .cardLine{
     display: flex;
     justify-content: space-around;
 }
-
 #skills{
     margin-top: 50px;
     position: relative;
     max-height: 1000px;
     padding-top: 150px;
 }
-
 .skillsTitle{
     text-align: center;
     font-size: 80px;
     font-weight: 300;
     margin-top: -85px;
 }
-
 .skillsTitleBack{
     text-align: center;
     opacity: 0.05;
@@ -107,41 +102,67 @@ header {
     left: 10%;
     right: 10%;
 }
-
 .size{
     width: 450px;
     height: 450px;
 }
-
 .spanSkills{
     margin-top: 20px;
     color: black;
 }
-
 .skillCard :hover{
     cursor: pointer;
 }
-
-.divGit i {
+.divGit i{
     margin: 10px;
 }
-
-a{
-    text-decoration: none;
-    color: black;
+.iconSize{
+    font-size: 7em;
 }
 
-#projets{
+
+
+/*PROJETS*/
+#projets {
     width: 100%;
-    height: 2500px;
+    height: 3500px;
     background: url(./images/1920x1080-95116-abstract-dark-black-minimalism-minimalist-hd-4k.jpg);
+    background-size: cover;
     margin-top: 100px;
     color: white;
     display: flex;
     flex-direction: column;
 }
-
-#projetJs {
+.description{
+    margin-top: -10px;
+    margin-bottom: 35px;
+    width: 60%;
+}
+.trait{
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    height: 2px;
+    background-color: white;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.listDescription{
+    margin-bottom: 20px;
+    list-style: '- ';
+    font-size: small;
+}
+.projetsTitle{
+    margin-top: 50px;
+    font-size: 80px;
+    font-weight: 300;
+    margin-left: auto;
+    margin-right: auto;
+}
+.titreDescription{
+    font-size: large;
+}
+#projetJs{
     width: 80%;
     height: 600px;
     background: url(./images/Desktop.jpg);
@@ -152,7 +173,6 @@ a{
     margin-left: 10%;
     margin-right: 10%;
 }
-
 #projetJsTitle{
     margin-top: 10px;
     margin-left: 11%;
@@ -160,57 +180,48 @@ a{
     display: flex;
     justify-content: space-between;
 }
-
 .stack{
 width: 20%;
 display: flex;
 justify-content: right;
-
 }
 
-.stack p {
+.stack p{
     margin-right: 15px;
 }
-
 .gitHubBtn{
     height: 40px;
     width: fit-content;
+    min-width:max-content;
     background-color: white;
     border-radius: 30px;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-
 .btnGitHub{
     margin-left: 10px;
     margin-right: 10px;
 }
-
 .real{
-    margin-top: -15px;
     width: fit-content;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
-.real p {
+.real p{
     margin-right: 10px;
 }
-
-.real i {
+.real i{
     margin-right: 15px;
 }
-
-#projetReactTitle {
+#projetReactTitle{
     margin-top: 10px;
     margin-left: 11%;
     margin-right: 11%;
     display: flex;
     justify-content: space-between;
 }
-
 #projetReact{
     width: 80%;
     height: 600px;
@@ -222,8 +233,7 @@ justify-content: right;
     margin-left: 10%;
     margin-right: 10%;
 }
-
-#projetNodejs {
+#projetNodejs{
     width: 80%;
     height: 600px;
     background: url(./images/Capture\ d’écran\ 2023-08-11\ 011156.jpg);
@@ -234,7 +244,6 @@ justify-content: right;
     margin-left: 10%;
     margin-right: 10%;
 }
-
 #projetNodeJsTitle{
     margin-top: 10px;
     margin-left: 11%;
@@ -243,27 +252,28 @@ justify-content: right;
     justify-content: space-between;
 }
 
-#formations{
-    width: 100%;
-    height: 1000px;
-    max-height: 1000px;
-    display: flex;
-    justify-content: space-between;
-    padding: 150px;
-}
 
+
+/*FORMATIONS*/
+#formations{
+    height: max-content;
+    justify-content: left;
+    padding: 50px;
+    padding-bottom: 100px;
+}
 #studyPng{
     width: 40%;
     height: 800px;
     object-fit: contain;
     margin-right: 150px;
 }
-
 .formation{
-    width: 500px;
-    height: 200px;
+    width:fit-content;
+    max-width: 80%;
+    height:fit-content;
     background-color: #f5f5f5;
     margin-top: 80px;
+    margin-left: 50px;
     border-radius: 15px;
     box-shadow: 5px 5px 15px 2px rgba(0,0,0,0.88);
     padding: 30px;
@@ -271,31 +281,44 @@ justify-content: right;
     flex-direction: column;
     justify-content: space-between;
 }
-
+.formationDescription{
+    margin-bottom: 40px;
+}
+.formationYear{
+    font-weight: 900;
+    font-size: 20px;
+}
 #formations h2 {
     font-size: 80px;
     font-weight: 300;
 }
-
 .formationTitle{
     font-size: 50px;
 }
-
 .formationSubTitle{
     font-size: 30px;
     font-weight: 400;
 }
-
 .diplome{
     font-weight: 700;
     font-size: 20px;
 }
+.blueLink{
+    color: #1f71ff;
+}
+.fTitle{
+    margin-top: 50px;
+    width: 100%;
+    margin-left: 50px;
+}
 
+
+
+/*FOOTER*/
 footer {
     background-image: url(./images/1920x1080-95116-abstract-dark-black-minimalism-minimalist-hd-4k.jpg);
     height: 700px;
 }
-
 #rs{
     padding-top: 100px;
     display: flex;
@@ -308,13 +331,11 @@ footer {
     justify-content: center;
     align-items: center;
 }
-
 #mail{
     color: white;
     font-size: 50px;
     margin-left: 50px;
 }
-
 #trait{
     margin-left: 10%;
     margin-right: 10%;
@@ -322,370 +343,6 @@ footer {
     height: 2px;
     background-color: white;
 }
-
-.iconSize {
-    font-size: 7em;
-}
-
 .mailIcon{
     font-size: 5em;
-}
-
-@media screen and (max-width: 1600px){
-    nav {
-        width: 50%;
-    }
-
-    .skillsTitleBack{
-        font-size: 90px;
-    }
-
-    .skillsTitle{
-        font-size: 55px;
-    }
-    .iconSize {
-        font-size: 6em;
-    }
-    .fa-7x{
-        font-size: 6em;
-    }
-}
-
-@media screen and (max-width: 1280px){
-    .gitHubBtn p {
-        font-size: 12px;
-    }
-    #studyPng{
-        display: none;
-    }
-
-    #formations{
-        justify-content:space-around;
-        padding: 0;
-    }
-
-    .fTitle{
-        margin-top: 50px;
-        width: 100%;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-}
-@media screen and (max-width: 1100px){
-    .skillsTitleBack{
-        font-size: 80px;
-    }
-
-    .skillsTitle{
-        font-size: 44px;
-    }
-
-    .gitHubBtn p {
-        font-size: 10px;
-    }
-
-    .iconSize {
-        font-size: 4em;
-    }
-    .fa-7x{
-        font-size: 4em;
-    }
-    nav {
-        width: 70%;
-    }
-    .skillCard{
-        height: 150px;
-    }
-    #projetReact{
-        height: 500px;
-    }
-    #projetJs{
-        height: 500px;
-    }
-    #projetNodejs{
-        height: 500px;
-    }
-    #projets{
-        height: 2200px;
-    }
-    #projets h3 {
-        font-size: 16px;
-    }
-    .real p{
-    font-size: 14px;
-    }
-
-    .real i{
-        font-size: larger;
-    }
-}
-
-@media screen and (max-width: 900px){
-    .gitHubBtn p {
-        display: none;
-    }
-    .gitHubBtn{
-        border-radius: 200px;
-        height: 50px;
-
-    }
-    .iconSize {
-        font-size: 3em;
-    }
-    .fa-7x{
-        font-size: 3em;
-    }
-    .skillsTitleBack{
-        font-size: 60px;
-    }
-
-    .skillsTitle{
-        font-size: 40px;
-        margin-top: -120px;
-    }
-    .skillCard{
-        height: 130px;
-        margin: 30px;
-    }
-    .divGit i{
-        margin: 5px;
-    }
-    #projetReact{
-        height: 400px;
-    }
-    #projetJs{
-        height: 400px;
-    }
-    #projetNodejs{
-        height: 400px;
-    }
-    #projets{
-        height: 1900px;
-    }
-    .formation{
-        width: 400px;
-    }
-    .fTitle{
-        margin: 0;
-        margin-top: 50px;
-        font-weight: 700;
-    }
-
-    #mail{
-        font-size: 30px;
-    }
-
-    .mailIcon{
-        font-size: 4em;
-    }
-}
-
-@media screen and (max-width: 650px){
-nav {
-    width: 90%;
-}
-header{
-    height: 750px;
-}
-#whoAmI{
-    padding-top: 250px ;
-}
-.prenom{
-    font-size: 70px;
-}
-.nom{
-    font-size: 90px;
-    line-height: 50px;
-}
-.work{
-    font-size:larger;
-}
-.iconSize {
-    font-size: 2em;
-}
-.fa-7x{
-    font-size: 2em;
-}
-.skillCard{
-    height: 100px;
-    padding-top: 25px;
-}
-.spanSkills {
-    font-size: smaller;
-    margin-top: 10px;
-}
-.skillsTitle{
-    font-size: 30px;
-}
-.skillsTitleBack{
-    font-size: 40px;
-}
-#skills{
-    margin-top: 20px;
-}
-#projetReact{
-    height: 280px;
-}
-#projetJs{
-    height: 280px;
-}
-#projetNodejs{
-    height: 280px;
-}
-#projets{
-    height: 1500px;
-}
-#projets h3 {
-    font-size: 14px;
-    width: 90%;
-}
-.real p{
-font-size: 12px;
-}
-
-.realIcon{
-    font-size: larger;
-}
-.gitHubBtn{
-    border-radius: 100%;
-    height: 40px;
-}
-.btnGitHub {
-    margin-left: 5px;
-    margin-right: 5px;
-}
-.formation{
-    width: 350px;
-    padding: 20px;
-    height: 150px;
-}
-.formationTitle{
-    font-size: 40px;
-}
-
-.formationSubTitle{
-    font-size: 20px;
-}
-
-#formations h2{
-    font-size: 70px;
-}
-#formations {
-    height: 800px;
-}
-#mail{
-    font-size: 20px;
-    margin-left: 25px;
-}
-
-.mailIcon{
-    font-size: 3em;
-}
-
-footer .fa-linkedin {
-    font-size: 3em;
-}
-
-footer .fa-github{
-    font-size: 3em;
-}
-
-footer .fa-twitter{
-    font-size: 3em;
-}
-
-footer{
-    height: 500px;
-}
-}
-
-@media screen and (max-width: 450px){
-    nav {
-        font-size: 12px;
-    }
-
-    .prenom{
-        font-size: 50px;
-    }
-    .nom{
-        font-size: 65px;
-        line-height: 30px;
-    }
-
-    .presentation{
-        font-size: 14px;
-        width: 70%;
-    }
-    header{
-        height: 700px;
-    }
-    #whoAmI{
-        padding-top: 200px ;
-    }
-    .skillCard{
-    margin: 15px;
-    height: 80px;
-    }
-    .divGit i{
-        margin: 0px;
-    }
-    .skillsTitle{
-        font-size: 20px;
-    }
-    .skillsTitleBack{
-        font-size: 30px;
-    }
-    #projetReact{
-        height: 200px;
-    }
-    #projetJs{
-        height: 200px;
-    }
-    #projetNodejs{
-        height: 200px;
-    }
-    #projets{
-        height: 1200px;
-    }
-    #projets h3 {
-        font-size: 12px;
-    }
-    .real p{
-    font-size: 10px;
-    }
-    .formation{
-        width: 220px;
-        padding: 15px;
-        height: 120px;
-        margin-left: 2%;
-    }
-    .formationTitle{
-        font-size: 30px;
-    }
-    
-    .formationSubTitle{
-        font-size: 15px;
-    }
-
-    .formationYear{
-        font-size: 13px;
-    }
-    
-    #formations h2{
-        font-size: 40px;
-        margin-left: 2%;
-        margin-right: 2%;
-        text-align: center;
-    }
-    #formations {
-        height: 650px;
-    }
-
-    .diplome{
-        font-size: 15px;
-    }
-
-    .mailIcon{
-        font-size: 2em;
-    }
 }
